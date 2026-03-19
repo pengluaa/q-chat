@@ -1,0 +1,37 @@
+{
+  "name": "chat_server",
+  "version": "1.1.0",
+  "description": "chat server",
+  "main": "app",
+  "sideEffects": true,
+  "scripts": {
+    "dev": "babel-node src/app.js",
+    "start": "set NODE_ENV=development& nodemon",
+    "build": "webpack",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "wqs",
+  "license": "ISC",
+  "dependencies": {
+    "koa": "^2.11.0",
+    "koa-router": "^8.0.8",
+    "koa-bodyparser": "^2.5.0",
+    "socket.io": "^2.1.1",
+    "moment": "^2.22.2",
+    "mysql": "^2.16.0",
+    "iconv-lite": "^0.4.24"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.8.7",
+    "@babel/node": "^7.8.7",
+    "@babel/preset-env": "^7.8.7",
+    "@babel/register": "^7.8.6",
+    "babel-loader": "^8.0.6",
+    "clean-webpack-plugin": "^3.0.0",
+    "eslint": "^6.8.0",
+    "nodemon": "^2.0.2",
+    "webpack": "^4.42.0",
+    "webpack-cli": "^3.3.11"
+  }
+}
